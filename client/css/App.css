@@ -8,6 +8,7 @@ body{
         border-radius: 0px;
         border-bottom: 1px #D4D4D4 solid;
         max-height: 50px;
+        margin-bottom: 0px;
     }
 
     .header-username-container{

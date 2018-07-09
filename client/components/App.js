@@ -10,7 +10,6 @@ import YearTabsRouter from './tabs/yearTabsRouter';
 import MonthTabs from './tabs/monthTabs';
 import TopNavBar from './TopNavBar';
 import Body from './Body/Body'
-import SideBar from './Body/Sidebar';
 export default class App extends React.Component {
 constructor() {
     super();
@@ -55,6 +54,7 @@ render() {
         <TopNavBar />
 
         <Body />
+        
 
         {/* <Tabs activeKey={this.state.activeTab} onSelect={this.handleSelect}>
           <Tab eventKey={2016} title={<YearTabsRouter year='2016' />}><MonthTabs year='2016' monthlyActiveTab={this.state.selectedMonth}/></Tab>

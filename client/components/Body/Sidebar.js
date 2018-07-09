@@ -14,7 +14,7 @@ class SideBar extends Component {
         <ListGroup className="sidebar" >
             <ListGroupItem>API</ListGroupItem>
             <ListGroupItem>Manual</ListGroupItem>
-            <ListGroupItem>Question</ListGroupItem>
+            <ListGroupItem>Questionnaire</ListGroupItem>
             <ListGroupItem>Financial Planner</ListGroupItem>
         </ListGroup>
     );

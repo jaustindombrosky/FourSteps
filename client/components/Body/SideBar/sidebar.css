@@ -1,0 +1,21 @@
+.sidebar{
+  font-family:  acumin-pro,Helvetica Neue,Helvetica,Arial;
+  font-size: 16px;
+  color: #5e5e5e;
+  min-width: 300px;
+  height: calc(100vh - 50px);
+  border-right: 1px solid grey;
+}
+
+.sidebar-list{
+    padding-left: 14px;
+    list-style: none;
+}
+
+.sidebar-parent-item{
+    display: flex;
+    flex-direction: column;
+    outline: none !important;
+    font-weight: 400;
+    outline-style: none;
+}

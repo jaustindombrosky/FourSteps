@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import {ListGroup, ListGroupItem} from 'react-bootstrap'
-import SideBar from "../Body/Sidebar";
+import {ListGroup, ListGroupItem, Grid, Col, Row} from 'react-bootstrap'
+import SideBar from "../Body/SideBar/SideBar";
 import Content from "./Content";
 import StrategyCheckList from '../StrategyCheckList/StrategyCheckList';
 
@@ -15,21 +15,13 @@ class Body extends Component {
   render() {
 
     return (
-        <div className="body-container">
-          <StrategyCheckList />
-            {/* <SideBar />
-            <div className="section1"/>
-            <div className="section2"/>
-            <div className="section3"/>
-            {/* <div className="section4">
-               <DefensiveStrategies />
-            </div>
-            <div className="section5">
-              <OffensiveStrategies />
-            </div> */} 
-            <div style={{display: 'flex'}}>
-            </div>
+        <div style={{display: 'flex'}}>   
+
+          <SideBar />
+          <Content />
+          
         </div>
+
     );
   }
 }

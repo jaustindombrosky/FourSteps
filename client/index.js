@@ -3,12 +3,18 @@ import ReactDOM from 'react-dom';
 
 import './index.css';
 import App from './components/App';
-import { HashRouter } from 'react-router-dom';
+import { HashRouter, MemoryRouter, Router } from 'react-router-dom';
 import Routes from './routes';
+import history from './history'
 
 ReactDOM.render(
-    <HashRouter>
-        <Routes />
-    </HashRouter>
+    <Router history={history}>
+        <App />
+    </Router>
+    // <HashRouter history={history}>
+    //     <Routes />
+    // </HashRouter>
     , document.getElementById('root')
 );
+
+

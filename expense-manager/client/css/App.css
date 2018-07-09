@@ -86,3 +86,102 @@ fieldset{
 .closebtn{
    float:right;
  }
+
+ .sidenav {
+   height: 50%; /* Full-height: remove this if you want "auto" height */
+   width: 160px; /* Set the width of the sidebar */
+   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+   z-index: 1; /* Stay on top */
+   top: 53px; /* Stay at the top */
+   left: 0;
+   background-color: #111; /* Black */
+   overflow-x: hidden; /* Disable horizontal scroll */
+   padding-top: 20px;
+ }
+
+ /* The navigation menu links */
+ .sidenav a {
+   padding: 6px 8px 6px 16px;
+   text-decoration: none;
+   font-size: 14px;
+   color: #818181;
+   display: block;
+ }
+
+ /* When you mouse over the navigation links, change their color */
+ .sidenav a:hover {
+   color: #f1f1f1;
+ }
+
+ /* Style page content */
+ .main {
+   margin-left: 160px; /* Same as the width of the sidebar */
+   padding: 0px 10px;
+ }
+
+ /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+ @media screen and (max-height: 450px) {
+   .sidenav {padding-top: 15px;}
+   .sidenav a {font-size: 18px;}
+ }
+
+ /* navbar header */
+ .navbar-brand {
+     float: left;
+     height: 50px;
+     padding: 15px 15px;
+     font-size: 15px;
+     line-height: 20px;
+ }
+
+ /* Side nav bar Questionnaire dropdown */
+ /* .btn-default {
+     color: #818181;
+     background-color: #111;
+     border-color: #111;
+ } */
+
+ /* Fixed sidenav, full height */
+ .sidenav {
+   height: 100%;
+   width: 200px;
+   position: fixed;
+   z-index: 1;
+   top: 11;
+   left: 0;
+   background-color: #111;
+   overflow-x: hidden;
+   padding-top: 20px;
+ }
+
+ /* Style the sidenav links and the dropdown button */
+ .sidenav a, .dropdown-btn {
+   padding: 6px 8px 6px 16px;
+   text-decoration: none;
+   font-size: 15px;
+   color: #818181;
+   display: block;
+   border: none;
+   background: none;
+   width:100%;
+   text-align: left;
+   cursor: pointer;
+   outline: none;
+ }
+
+/*  margin settings to fix Questionnaire*/
+  .dropdown {
+    margin-top: -20px;
+}
+
+/*  creating id for logout position*/
+#logout_position {
+  position:relative;
+  left:157px;
+}
+
+/* creating id for username position */
+#username_position {
+  position: relative;
+  right:171px;
+}

@@ -8,7 +8,12 @@ import Delete from './Delete';
 import { Tab, Tabs } from 'react-bootstrap';
 import YearTabsRouter from './tabs/yearTabsRouter';
 import MonthTabs from './tabs/monthTabs';
+import Body from './Body/Body'
+// import SideBar from './Body/Sidebar';
+
+
 export default class App extends React.Component {
+
 constructor() {
     super();
   this.state = {selectedMonth:'All', selectedYear: 2016, data: [], activeTab:2016};
@@ -46,8 +51,12 @@ getData(ev, year, month){
 }
 render() {
     return (
-      <div>
-        <Tabs activeKey={this.state.activeTab} onSelect={this.handleSelect}>
+        <div style={{display: 'flex', flexDirection: 'column'}}>
+
+
+        <Body />
+
+        {/* <Tabs activeKey={this.state.activeTab} onSelect={this.handleSelect}>
           <Tab eventKey={2016} title={<YearTabsRouter year='2016' />}><MonthTabs year='2016' monthlyActiveTab={this.state.selectedMonth}/></Tab>
           <Tab eventKey={2017} title={<YearTabsRouter year='2017' />}><MonthTabs year='2017' monthlyActiveTab={this.state.selectedMonth}/></Tab>
           <Tab eventKey={2018} title={<YearTabsRouter year='2018'/>}><MonthTabs year='2018' monthlyActiveTab={this.state.selectedMonth}/></Tab>
@@ -66,8 +75,9 @@ render() {
               })
             }
             </tbody>
-</table>
+        </table> */}
       </div>
     );
   }
+
 }

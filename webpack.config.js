@@ -19,6 +19,11 @@ module.exports = {
         {
          test: /\.css$/,
          loader: "style-loader!css-loader"
+         
+        },
+        {
+            test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)(\?v=.+)?$/,
+            loader: 'file-loader?name=assets/[name].[hash].[ext]'
         }]
        }
       }
